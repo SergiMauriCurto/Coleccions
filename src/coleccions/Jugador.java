@@ -12,11 +12,9 @@ import java.util.List;
 public class Jugador {
     
     private List juga=new ArrayList();
-    private List ju=new ArrayList();
-    
+    private List pertany=new ArrayList();
     
     public static void main(String[] args) {
-        // TODO code application logic here
         
         String nom;
         int dorsal;

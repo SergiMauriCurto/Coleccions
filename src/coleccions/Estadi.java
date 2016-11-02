@@ -5,14 +5,9 @@
  */
 package coleccions;
 
-/**
- *
- * @author alumne
- */
 public class Estadi {
     
     public static void main(String[] args) {
-        // TODO code application logic here
         
         int capacitat;
         

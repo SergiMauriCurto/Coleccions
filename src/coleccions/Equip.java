@@ -5,20 +5,18 @@
  */
 package coleccions;
 
-/**
- *
- * @author alumne
- */
+import java.util.ArrayList;
+import java.util.List;
+
 public class Equip {
 
-    /**
-     * @param args the command line arguments
-     */
+    private List utilitza=new ArrayList();
+    
     public static void main(String[] args) {
-        // TODO code application logic here
         
         int jugadors;
         int trofeus;
+   
     }
     
 }

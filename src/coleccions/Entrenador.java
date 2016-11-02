@@ -5,8 +5,11 @@
  */
 package coleccions;
 
+
 import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 
 /**
  *
@@ -14,12 +17,12 @@ import java.util.List;
  */
 public class Entrenador {
     
-    private List entrena=new ArrayList();
+    //Ho faig en un HashSet per què no vull que els jugadors entrenats es puguin repetir i és mes rapit a la hora de modificar-los.
+    private Set entrena=new HashSet();
     
     public static void main(String[] args) {
-        // TODO code application logic here
         
-        String nom;
+        String no;
         double sou;
         
     }

@@ -8,13 +8,13 @@ package coleccions;
 /**
  *
  * @author alumne
- * @param <O>
+ * @param <T>
  */
-public class UniCapsa<O> {
+public class UniCapsa<T> {
     
-    protected O obj;
+    protected T obj;
     
-    public boolean afegir(O obj) {
+    public boolean afegir(T obj) {
         if (!esPlena()) {
             this.obj = obj;
             return true;
@@ -27,7 +27,7 @@ public class UniCapsa<O> {
         return obj != null;
     }
     
-    public O obtenir() {
+    public T obtenir() {
         if(esPlena()) {
             return obj;
         }

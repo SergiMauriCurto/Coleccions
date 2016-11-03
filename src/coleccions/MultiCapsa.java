@@ -13,29 +13,23 @@ package coleccions;
 public class MultiCapsa<E> {
     
     protected E obj;
-    
-    public boolean afegir(E obj) {
-        if (!esPlena()) {
-            this.obj = obj;
+        
+    public boolean esBuida() {
+        if(esBuida()) {
             return true;
         }
-        
         return false;
-    }
-        
-    public boolean esPlena() {
-        return obj != null;
     }
     
     public E obtenir() {
-        if(esPlena()) {
+        if(!esBuida()) {
             return obj;
         }
         return null;
     }
     
     public boolean buidar() {
-        if(esPlena()) {
+        if(esBuida()) {
             this.obj = null;
             return true;
         }

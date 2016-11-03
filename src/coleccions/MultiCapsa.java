@@ -8,7 +8,38 @@ package coleccions;
 /**
  *
  * @author alumne
+ * @param <E>
  */
-public class MultiCapsa {
+public class MultiCapsa<E> {
     
+    protected E obj;
+    
+    public boolean afegir(E obj) {
+        if (!esPlena()) {
+            this.obj = obj;
+            return true;
+        }
+        
+        return false;
+    }
+        
+    public boolean esPlena() {
+        return obj != null;
+    }
+    
+    public E obtenir() {
+        if(esPlena()) {
+            return obj;
+        }
+        return null;
+    }
+    
+    public boolean buidar() {
+        if(esPlena()) {
+            this.obj = null;
+            return true;
+        }
+        return false;
+    }
 }
+

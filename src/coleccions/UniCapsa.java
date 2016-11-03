@@ -12,7 +12,7 @@ package coleccions;
  */
 public class UniCapsa<T> {
     
-    protected T obj;
+    private T obj;
     
     public boolean afegir(T obj) {
         if (!esPlena()) {

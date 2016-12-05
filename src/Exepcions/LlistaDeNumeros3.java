@@ -3,14 +3,12 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package coleccions;
+package Exepcions;
 
-public class Estadi {
-    
-    public static void main(String[] args) {
-        
-        int capacitat;
-        
-    }
+/**
+ *
+ * @author alumne
+ */
+public class LlistaDeNumeros3 {
     
 }

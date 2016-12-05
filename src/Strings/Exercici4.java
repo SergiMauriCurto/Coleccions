@@ -3,14 +3,19 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package coleccions;
+package Strings;
 
-public class Lliga {
+/**
+ *
+ * @author alumne
+ */
+public class Exercici4 {
     
     public static void main(String[] args) {
         
-        String equips;
-        String pais;
-    }
+    String hi = "Hi, ";
+    String mom = "mom.";
     
+    }
 }
+    

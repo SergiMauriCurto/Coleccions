@@ -3,42 +3,37 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package coleccions;
+package ClassesGeneriques;
 
 /**
  *
  * @author alumne
- * @param <T>
+ * @param <E>
  */
-public class UniCapsa<T> {
+public class MultiCapsa<E> {
     
-    private T obj;
-    
-    public boolean afegir(T obj) {
-        if (!esPlena()) {
-            this.obj = obj;
+    protected E obj;
+        
+    public boolean esBuida() {
+        if(esBuida()) {
             return true;
         }
-        
         return false;
     }
-        
-    public boolean esPlena() {
-        return obj != null;
-    }
     
-    public T obtenir() {
-        if(esPlena()) {
+    public E obtenir() {
+        if(!esBuida()) {
             return obj;
         }
         return null;
     }
     
     public boolean buidar() {
-        if(esPlena()) {
+        if(esBuida()) {
             this.obj = null;
             return true;
         }
         return false;
     }
 }
+
